@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+function maintain(){
+    /bin/apt-get update;
+    /bin/apt-get -y full-upgrade;
+    /bin/apt-get -y autoremove --purge;
+    /bin/apt-get -y autoclean;
+};
+maintain;
+exit;
