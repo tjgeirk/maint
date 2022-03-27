@@ -1,10 +1,10 @@
 #!/bin/bash
 #
 function maintain(){
-    /usr/bin/apt-get update;
-    /usr/bin/apt-get -y full-upgrade;
-    /usr/bin/apt-get -y autoremove --purge;
-    /usr/bin/apt-get -y autoclean;
+    apt-get update;
+    apt-get -y full-upgrade;
+    apt-get -y autoremove --purge;
+    apt-get -y autoclean;
 };
 maintain;
 exit;
